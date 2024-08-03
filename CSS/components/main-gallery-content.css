@@ -1,8 +1,13 @@
 .main-gallery-content {
   display: grid;
   column-gap: 1em;
+  row-gap: 1em;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main-gallery-content > img {
+  cursor: pointer;
 }
 
 .about-container {
@@ -19,10 +24,12 @@
   justify-content: space-between;
 }
 
-.about-container .eliran-img {
+.about-container .kids-img {
   grid-column: 1;
-  border: 5px solid black;
-  border-radius: 100vh;
+  border: 5px solid var(--clr-primary3);
+  border-radius: 5em 0 5em;
+
+  justify-self: center;
 }
 
 .title-container {
@@ -31,16 +38,17 @@
   row-gap: 1em;
 }
 
-.eliran-title {
+.kids-title {
   font-family: Hey-Comic;
 }
 
 .about-links-container {
   display: flex;
+  padding: 0;
   gap: 1em;
 }
 
-.about-container .eliran-title,
-.eliran-txt {
+.about-container .kids-title,
+.kids-txt {
   grid-column: 2;
 }

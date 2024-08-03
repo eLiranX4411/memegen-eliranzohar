@@ -8,6 +8,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  box-shadow: inset 0 -2px 0 var(--clr-black);
 }
 
 .logo-bar-container .logo {

@@ -33,14 +33,29 @@
       <main class="main-gallery-content">
         <img src="IMG/1.jpg" alt="404" srcset="" />
         <img src="IMG/2.jpg" alt="404" srcset="" />
+        <img src="IMG/3.jpg" alt="404" srcset="" />
+        <img src="IMG/4.jpg" alt="404" srcset="" />
+        <img src="IMG/5.jpg" alt="404" srcset="" />
+        <img src="IMG/6.jpg" alt="404" srcset="" />
+        <img src="IMG/7.jpg" alt="404" srcset="" />
+        <img src="IMG/8.jpg" alt="404" srcset="" />
+        <img src="IMG/9.jpg" alt="404" srcset="" />
       </main>
 
       <div class="about-container full">
-        <img class="eliran-img" src="IMG/eliran.jpg" alt="" srcset="" />
+        <img class="kids-img" src="IMG/kidss.jpg" alt="" srcset="" />
         <div class="text-container">
           <div class="title-container">
-            <h2 class="eliran-title">Eliran Zohar</h2>
-            <p class="eliran-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="kids-title">Kids love to play in websites</h2>
+            <p class="kids-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="kids-txt">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae sequi quia aperiam soluta cupiditate placeat esse beatae, accusamus ab alias
+              aliquid reiciendis odio perferendis perspiciatis reprehenderit praesentium voluptatum! Omnis, ipsam!
+            </p>
+            <p class="kids-txt">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae sequi quia aperiam soluta cupiditate placeat esse beatae, accusamus ab alias
+              aliquid reiciendis odio perferendis perspiciatis reprehenderit praesentium voluptatum! Omnis, ipsam!
+            </p>
           </div>
           <ul class="about-links-container">
             <li class=""><a href="#">linkdin icon</a></li>
@@ -57,6 +72,7 @@
           <div class="logo">Memegen For Kids</div>
           <ul class="links-container">
             <li class="gallery"><a href="#">Gallery</a></li>
+            <li>|</li>
             <li class="about"><a href="#">About</a></li>
           </ul>
         </nav>
@@ -67,19 +83,28 @@
           <canvas class="canvas-board" width="450" height="450" onclick=""> </canvas>
         </div>
         <div class="editor-options">
-          <label for="canvasText"><input type="text" placeholder="Input meme text here" id="canvasText" /></label>
-          <div class="add-text"></div>
-          <div class="change-between-texts"></div>
-          <div class="remove-element"></div>
-          <select class="fonts-options" name="fonts-options" onchange="">
-            <option value="fontname">fontname</option>
-            <option value="fontname">fontname</option>
-            <option value="fontname">fontname</option>
-          </select>
+          <div class="crudl-canvas-container">
+            <label for="canvasText"><input type="text" placeholder="Input meme text here" id="canvasText" /></label>
+            <div class="crudl">
+              <div class="add-text">+</div>
+              <div class="change-between-texts">^</div>
+              <div class="remove-element">X</div>
+            </div>
+            <div class="fonts-crudl">
+              <div class="add-text">A</div>
+              <div class="change-between-texts">A</div>
+              <div class="remove-element">A</div>
+            </div>
+            <select class="fonts-options" name="fonts-options" onchange="">
+              <option value="fontname">fontname</option>
+              <option value="fontname">fontname</option>
+              <option value="fontname">fontname</option>
+            </select>
+          </div>
           <div class="stickers-container">
-            <div class="sticker1"></div>
-            <div class="sticker2"></div>
-            <div class="sticker3"></div>
+            <div class="sticker1">😂</div>
+            <div class="sticker2">🙃</div>
+            <div class="sticker3">😇</div>
           </div>
           <ul class="share-container">
             <li><a href="#">Save</a></li>
@@ -90,7 +115,7 @@
       </main>
     </section>
 
-    <footer class="main-footer full">&copy; Memegen For Kids By Eliran Zohar</footer>
+    <footer class="main-footer full">&copy; Memegen For Kids - By Eliran Zohar</footer>
     <script src="JS/services/utilService.js"></script>
     <script src="JS/services/storageService.js"></script>
     <script src="JS/services/memeService.js"></script>

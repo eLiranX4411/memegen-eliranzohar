@@ -6,4 +6,6 @@
   font-size: x-large;
   background-color: var(--clr-primary3);
   height: 210px;
+
+  box-shadow: inset 0 2px 0 var(--clr-black);
 }
