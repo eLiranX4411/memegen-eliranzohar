@@ -1,0 +1,16 @@
+/* Gallery Layout */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(auto, 1000px) minmax(100px, 1fr);
+  min-height: 100%;
+  row-gap: 2em;
+}
+
+.gallery-container > *:not(.full) {
+  grid-column: 2;
+}
+
+.gallery-container > .full {
+  grid-column: 1 / -1;
+}

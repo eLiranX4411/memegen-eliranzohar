@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Memegen For Kids</title>
+  </head>
+  <body class="main-layout">
+    <section class="gallery-container">
+      <header class="main-header full">
+        <nav class="logo-bar-container">
+          <div class="logo">Memegen For Kids</div>
+          <ul class="links-container">
+            <li class="gallery"><a href="#">Gallery</a></li>
+            <li>|</li>
+            <li class="about"><a href="#">About</a></li>
+          </ul>
+        </nav>
+
+        <nav class="keywords-bar-container">
+          <label for="keywordSearch"><input type="text" placeholder="Enter search keyword" id="keywordSearch" name="keywordSearch" /> 🔍</label>
+          <ul class="keywords-container">
+            <li><a href="#">Funny</a></li>
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#">Dogs</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Comics</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-gallery-content">
+        <img src="IMG/1.jpg" alt="404" srcset="" />
+        <img src="IMG/2.jpg" alt="404" srcset="" />
+      </main>
+
+      <div class="about-container full">
+        <img class="eliran-img" src="IMG/eliran.jpg" alt="" srcset="" />
+        <div class="text-container">
+          <div class="title-container">
+            <h2 class="eliran-title">Eliran Zohar</h2>
+            <p class="eliran-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <ul class="about-links-container">
+            <li class=""><a href="#">linkdin icon</a></li>
+            <li class=""><a href="#">fb icon</a></li>
+            <li class=""><a href="#">git icon</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="editor-container">
+      <header class="main-header full">
+        <nav class="logo-bar-container">
+          <div class="logo">Memegen For Kids</div>
+          <ul class="links-container">
+            <li class="gallery"><a href="#">Gallery</a></li>
+            <li class="about"><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-editor-content">
+        <div class="canvas-container">
+          <canvas class="canvas-board" width="450" height="450" onclick=""> </canvas>
+        </div>
+        <div class="editor-options">
+          <label for="canvasText"><input type="text" placeholder="Input meme text here" id="canvasText" /></label>
+          <div class="add-text"></div>
+          <div class="change-between-texts"></div>
+          <div class="remove-element"></div>
+          <select class="fonts-options" name="fonts-options" onchange="">
+            <option value="fontname">fontname</option>
+            <option value="fontname">fontname</option>
+            <option value="fontname">fontname</option>
+          </select>
+          <div class="stickers-container">
+            <div class="sticker1"></div>
+            <div class="sticker2"></div>
+            <div class="sticker3"></div>
+          </div>
+          <ul class="share-container">
+            <li><a href="#">Save</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Share</a></li>
+          </ul>
+        </div>
+      </main>
+    </section>
+
+    <footer class="main-footer full">&copy; Memegen For Kids By Eliran Zohar</footer>
+    <script src="JS/services/utilService.js"></script>
+    <script src="JS/services/storageService.js"></script>
+    <script src="JS/services/memeService.js"></script>
+
+    <script src="JS/controllers/galleryController.js"></script>
+    <script src="JS/controllers/editorController.js"></script>
+  </body>
+</html>

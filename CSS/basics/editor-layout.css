@@ -1,0 +1,15 @@
+/* Editor Layout */
+
+.editor-container {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(auto, 1000px) minmax(100px, 1fr);
+  min-height: 100%;
+}
+
+.editor-container > *:not(.full) {
+  grid-column: 2;
+}
+
+.editor-container > .full {
+  grid-column: 1 / -1;
+}

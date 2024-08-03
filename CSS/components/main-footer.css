@@ -1,0 +1,9 @@
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Keep-Cheese;
+  font-size: x-large;
+  background-color: var(--clr-primary3);
+  height: 210px;
+}

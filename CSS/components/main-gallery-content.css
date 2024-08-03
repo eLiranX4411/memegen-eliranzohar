@@ -1,0 +1,46 @@
+.main-gallery-content {
+  display: grid;
+  column-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.about-container {
+  display: grid;
+  padding: 3em;
+  column-gap: 3em;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--clr-primary2);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-container .eliran-img {
+  grid-column: 1;
+  border: 5px solid black;
+  border-radius: 100vh;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.eliran-title {
+  font-family: Hey-Comic;
+}
+
+.about-links-container {
+  display: flex;
+  gap: 1em;
+}
+
+.about-container .eliran-title,
+.eliran-txt {
+  grid-column: 2;
+}

@@ -1,0 +1,49 @@
+/* ---------------------------------------Mobile------------------------------------- */
+
+@media (max-width: 880px) {
+  /* .main-layout {
+    display: grid;
+    grid-template-rows: auto;
+    min-height: 0px;
+    row-gap: 5em;
+  }
+
+  .main-content {
+    row-gap: 3em;
+    border-radius: 2em;
+    margin-block-start: 4em;
+
+    background-color: #62acc75d;
+  } */
+}
+
+/* ---------------------------------------Small------------------------------------- */
+
+@media (min-width: 640px) {
+  /* .main-layout {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 600px) minmax(20px, 1fr);
+  } */
+}
+
+/* ---------------------------------------Medium------------------------------------- */
+
+@media (min-width: 880px) {
+  /* .main-layout {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 800px) minmax(20px, 1fr);
+  }
+
+  .main-content {
+    row-gap: 2em;
+  } */
+}
+
+/* ---------------------------------------Large------------------------------------- */
+
+@media (min-width: 1080px) {
+  /* .main-layout {
+    display: grid;
+    grid-template-columns: minmax(40px, 1fr) minmax(auto, 1000px) minmax(40px, 1fr);
+  } */
+}
