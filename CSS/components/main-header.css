@@ -25,7 +25,7 @@
   background-color: var(--clr-primary2);
   min-height: 100px;
   font-family: comictans;
-  font-size: x-large;
+  font-size: 1.2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
