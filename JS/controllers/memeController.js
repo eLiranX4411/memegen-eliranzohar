@@ -1,25 +1,7 @@
 'use strict'
 
-const gQueryOptions = {
-  filterBy: { title: '', rating: 0 },
-  sortBy: {},
-}
-
 var gCtx
 var gElCanvas
-
-function onInit() {
-  renderImgs()
-}
-
-function renderImgs() {
-  var elImgs = document.querySelector('.imgs-container')
-  var strHtml = getImgs(gQueryOptions)
-    .map((img) => `<img src="${img.url}" alt="404" onclick="onSetImg(${img.id})" />`)
-    .join('')
-
-  elImgs.innerHTML = strHtml
-}
 
 function renderMeme() {
   var gElCanvas = document.querySelector('.canvas-board')
@@ -42,30 +24,9 @@ function renderMeme() {
   }
 }
 
-function onSetImg(imgId) {
-  const meme = getMeme()
-  meme.selectedImgId = imgId
-  showEditorScreen()
-  renderMeme()
-}
-
-function showEditorScreen() {
-  const elGallery = document.querySelector('.gallery-container')
-  elGallery.classList.add(`dsp-none`)
-
-  const elEditor = document.querySelector('.editor-container')
-  elEditor.classList.remove(`dsp-none`)
-
+function onChangeLineTxt(txt) {
+  setLineTxt(txt)
   renderMeme()
 }
 
 // -------------------------TRASHCAN-----------------------------
-
-/*
-function showGalleryScreen() {
-  const elEditor = document.querySelector('.editor-container')
-  elEditor.classList.add(`dsp-none`)
-
-  renderMeme()
-}
-*/

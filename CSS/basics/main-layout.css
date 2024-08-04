@@ -5,3 +5,7 @@
 .dsp-none {
   display: none;
 }
+
+.dsp-grid {
+  display: grid;
+}

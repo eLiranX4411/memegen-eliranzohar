@@ -21,7 +21,7 @@ var gMeme = {
   selectedLineIdx: 0,
   lines: [
     {
-      txt: 'I sometimes eat Falafel',
+      txt: 'Shalom',
       size: 30,
       color: 'white',
     },
@@ -38,6 +38,14 @@ function getImgs() {
   return gImgs
 }
 
+function setImg(imgId) {
+  gMeme.selectedImgId = imgId
+}
+
+function setLineTxt(txt) {
+  gMeme.lines[gMeme.selectedLineIdx].txt = txt
+}
+
 function getImgById(id) {
   return gImgs.find((img) => img.id === id)
 }
@@ -45,3 +53,5 @@ function getImgById(id) {
 function _storageSaving() {
   saveToStorage(STORAGE_KEY, storageMeme)
 }
+
+// -------------------------TRASHCAN-----------------------------
