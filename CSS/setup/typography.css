@@ -1,27 +1,14 @@
 @font-face {
-<<<<<<< HEAD
-  font-family: HeyComic, sans-serif;
+  font-family: 'HeyComic';
   src: url(../FONTS/Hey_Comic/Hey_Comic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: KeepCheese, sans-serif;
+  font-family: 'KeepCheese';
   src: url(../FONTS/Keep_Cheese/Keep_Cheese.ttf) format('truetype');
-}
-@font-face {
-  font-family: ComicTans, serif;
-  src: url(/FONTS/ComicTans/ComicTans.ttf) format('truetype');
-=======
-  font-family: Hey-Comic, sans-serif;
-  src: url(../FONTS/hey_comic/Hey_Comic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: Keep-Cheese, sans-serif;
-  src: url(../FONTS/keep_cheese/Keep_Cheese.ttf) format('truetype');
-}
-@font-face {
-  font-family: comictans, serif;
-  src: url(../FONTS/comictans/ComicTans.ttf) format('truetype');
->>>>>>> 94a5265bfe1e6a0c073a43a4761e871817502ff1
+  font-family: 'ComicTans';
+  src: url(../FONTS/ComicTans/ComicTans.ttf) format('truetype');
 }
