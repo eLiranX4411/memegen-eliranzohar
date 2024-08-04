@@ -5,10 +5,6 @@
   column-gap: 3em;
 }
 
-/* canvas {
-  background-color: var(--clr-white);
-} */
-
 .editor-options {
   display: grid;
   justify-content: center;
