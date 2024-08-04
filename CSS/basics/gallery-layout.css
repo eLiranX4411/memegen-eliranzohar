@@ -1,9 +1,7 @@
 /* Gallery Layout */
 
 .gallery-container {
-  /* display: grid; */
-  grid-template-columns: minmax(100px, 1fr) minmax(auto, 1000px) minmax(100px, 1fr);
-  row-gap: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .gallery-container > *:not(.full) {

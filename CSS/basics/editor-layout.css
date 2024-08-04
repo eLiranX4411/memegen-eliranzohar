@@ -1,8 +1,7 @@
 /* Editor Layout */
 
 .editor-container {
-  /* display: grid; */
-  grid-template-columns: minmax(40px, 1fr) minmax(auto, 1000px) minmax(40px, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .editor-container > *:not(.full) {
