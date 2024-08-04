@@ -1,4 +1,4 @@
-.main-gallery-content {
+.imgs-container {
   display: grid;
   column-gap: 1em;
   row-gap: 1em;
@@ -6,7 +6,7 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.main-gallery-content > img {
+.imgs-container > img {
   cursor: pointer;
 }
 

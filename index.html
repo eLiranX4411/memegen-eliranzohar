@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <title>Memegen For Kids</title>
   </head>
-  <body class="main-layout">
+  <body class="main-layout" onload="onInit()">
     <section class="gallery-container">
       <header class="main-header full">
         <nav class="logo-bar-container">
@@ -30,17 +30,7 @@
         </nav>
       </header>
 
-      <main class="main-gallery-content">
-        <img src="IMG/1.jpg" alt="404" srcset="" />
-        <img src="IMG/2.jpg" alt="404" srcset="" />
-        <img src="IMG/3.jpg" alt="404" srcset="" />
-        <img src="IMG/4.jpg" alt="404" srcset="" />
-        <img src="IMG/5.jpg" alt="404" srcset="" />
-        <img src="IMG/6.jpg" alt="404" srcset="" />
-        <img src="IMG/7.jpg" alt="404" srcset="" />
-        <img src="IMG/8.jpg" alt="404" srcset="" />
-        <img src="IMG/9.jpg" alt="404" srcset="" />
-      </main>
+      <main class="imgs-container"></main>
 
       <div class="about-container full">
         <img class="kids-img" src="IMG/kidss.jpg" alt="" srcset="" />
@@ -54,7 +44,6 @@
             </p>
             <p class="kids-txt">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae sequi quia aperiam soluta cupiditate placeat esse beatae, accusamus ab alias
-              aliquid reiciendis odio perferendis perspiciatis reprehenderit praesentium voluptatum! Omnis, ipsam!
             </p>
           </div>
           <ul class="about-links-container">
@@ -66,7 +55,7 @@
       </div>
     </section>
 
-    <section class="editor-container">
+    <section class="editor-container dsp-none">
       <header class="main-header full">
         <nav class="logo-bar-container">
           <div class="logo">Memegen For Kids</div>
@@ -121,6 +110,6 @@
     <script src="JS/services/memeService.js"></script>
 
     <script src="JS/controllers/galleryController.js"></script>
-    <script src="JS/controllers/editorController.js"></script>
+    <script src="JS/controllers/memeController.js"></script>
   </body>
 </html>

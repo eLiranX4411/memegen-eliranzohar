@@ -2,7 +2,6 @@
 
 .editor-container {
   /* display: grid; */
-  display: none;
   grid-template-columns: minmax(40px, 1fr) minmax(auto, 1000px) minmax(40px, 1fr);
 }
 

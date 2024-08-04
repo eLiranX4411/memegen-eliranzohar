@@ -1,3 +1,7 @@
 .main-layout {
   background-color: var(--clr-primary);
 }
+
+.dsp-none {
+  display: none;
+}

@@ -2,11 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-block: 2em;
+  column-gap: 3em;
 }
 
-canvas {
-  background-color: var(--clr-black);
-}
+/* canvas {
+  background-color: var(--clr-white);
+} */
 
 .editor-options {
   display: grid;
