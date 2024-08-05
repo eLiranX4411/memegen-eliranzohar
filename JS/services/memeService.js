@@ -33,9 +33,18 @@ var gMeme = {
   selectedLineIdx: 0,
   lines: [
     {
-      txt: 'Hello World :)',
-      size: 50,
+      txt: 'Text Here',
+      size: 40,
       color: 'white',
+      x: 250,
+      y: 50,
+    },
+    {
+      txt: 'Text 2 Here',
+      size: 40,
+      color: 'white',
+      x: 250,
+      y: 400,
     },
   ],
 }
@@ -58,6 +67,26 @@ function setLineTxt(txt) {
   gMeme.lines[gMeme.selectedLineIdx].txt = txt
 
   _memeStorageSaving()
+}
+
+function addLine() {
+  gMeme.lines.push({
+    txt: 'Text Here',
+    size: 40,
+    color: 'white',
+    x: 250,
+    y: getRandomInt(100, 500),
+  })
+}
+
+function switchLines() {
+  if (gMeme.selectedLineIdx === 0) {
+    gMeme.selectedLineIdx++
+  } else {
+    gMeme.selectedLineIdx--
+  }
+  // console.log(`gMeme.selectedLineIdx:`, gMeme.selectedLineIdx)
+  // console.log(`gMeme:`, gMeme)
 }
 
 function setLineColor(color) {

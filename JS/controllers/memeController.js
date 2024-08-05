@@ -19,13 +19,23 @@ function renderMeme() {
       gCtx.font = `${line.size}px Arial`
       gCtx.fillStyle = line.color
       gCtx.textAlign = `center`
-      gCtx.fillText(line.txt, gElCanvas.width / 2, gElCanvas.height / 2)
+      gCtx.fillText(line.txt, line.x, line.y)
     })
   }
 }
 
 function onChangeLineTxt(txt) {
   setLineTxt(txt)
+  renderMeme()
+}
+
+function onAddTxt() {
+  addLine()
+  renderMeme()
+}
+
+function onSwitchLine() {
+  switchLines()
   renderMeme()
 }
 

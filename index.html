@@ -75,8 +75,8 @@
             <label for="canvasText"><input type="text" placeholder="Input meme text here" id="canvasText" oninput="onChangeLineTxt(this.value)" /></label>
             <label for="colorPicker"><input type="color" id="colorPicker" oninput="onChangeColorTxt(this.value)" /></label>
             <div class="crudl">
-              <button class="add-text">+</button>
-              <button class="change-between-texts">^</button>
+              <button class="add-line" onclick="onAddTxt()">+</button>
+              <button class="switch-lines" onclick="switchLines()">^</button>
               <button class="remove-element">X</button>
             </div>
             <div class="fonts-crudl">
