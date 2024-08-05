@@ -8,6 +8,7 @@ const gQueryOptions = {
 function onInit() {
   renderGallery()
   showGalleryScreen()
+  closeEditorScreen()
 }
 
 function renderGallery() {
@@ -38,6 +39,12 @@ function showEditorScreen() {
 function showGalleryScreen() {
   const elGallery = document.querySelector('.gallery-container')
   elGallery.classList.add(`dsp-grid`)
+}
+
+function closeEditorScreen() {
+  const elEditor = document.querySelector('.editor-container')
+  elEditor.classList.add(`dsp-none`)
+  elEditor.classList.remove(`dsp-grid`)
 }
 
 // -------------------------Hamburger Menu-----------------------------
