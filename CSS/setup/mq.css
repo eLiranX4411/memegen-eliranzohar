@@ -220,6 +220,10 @@
     margin-inline-end: 1.5em;
   }
 
+  .logo-bar-container .links-container .seperator {
+    border-inline-start: 2px solid black;
+  }
+
   .keywords-bar-container {
     background-color: var(--clr-primary2);
     min-height: 100px;

@@ -4,7 +4,7 @@ var gCtx
 var gElCanvas
 
 function renderMeme() {
-  var gElCanvas = document.querySelector('.canvas-board')
+  gElCanvas = document.querySelector('.canvas-board')
   const gCtx = gElCanvas.getContext('2d')
 
   const meme = getMeme()
@@ -27,6 +27,26 @@ function renderMeme() {
 function onChangeLineTxt(txt) {
   setLineTxt(txt)
   renderMeme()
+}
+
+function onChangeColorTxt(color) {
+  setLineColor(color)
+  renderMeme()
+}
+
+function onIncreaseFontSize() {
+  increaseFontSize()
+  renderMeme()
+}
+
+function onDecreaseFontSize() {
+  decreaseFontSize()
+  renderMeme()
+}
+
+function downloadImg(elLink) {
+  const imgContent = gElCanvas.toDataURL('image/jpeg') // image/jpeg the default format
+  elLink.href = imgContent
 }
 
 // -------------------------TRASHCAN-----------------------------
