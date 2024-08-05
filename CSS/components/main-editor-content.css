@@ -1,9 +1,3 @@
-.editor-options {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
 #canvasText {
   border-radius: 0.5em;
   border: none;

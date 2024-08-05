@@ -19,7 +19,13 @@ function renderMeme() {
       gCtx.font = `${line.size}px Arial`
       gCtx.fillStyle = line.color
       gCtx.textAlign = `center`
+
       gCtx.fillText(line.txt, line.x, line.y)
+      gCtx.strokeText(line.txt, line.x, line.y)
+      gCtx.stroke()
+
+      // gCtx.strokeStyle = 'black'
+      // gCtx.strokeRect(line.x, line.y, line.x, line.y)
     })
   }
 }

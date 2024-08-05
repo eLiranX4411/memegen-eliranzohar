@@ -36,15 +36,15 @@ var gMeme = {
       txt: 'Text Here',
       size: 40,
       color: 'white',
-      x: 250,
+      x: 350,
       y: 50,
     },
     {
       txt: 'Text 2 Here',
       size: 40,
       color: 'white',
-      x: 250,
-      y: 400,
+      x: 350,
+      y: 600,
     },
   ],
 }
