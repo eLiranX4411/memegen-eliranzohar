@@ -1,21 +1,12 @@
 .imgs-container {
-  display: grid;
-  column-gap: 1em;
-  row-gap: 1em;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-block: 1em;
 }
 
 .imgs-container > img {
   cursor: pointer;
-}
-
-.about-container {
-  display: grid;
-  padding: 3em;
-  column-gap: 3em;
-  grid-template-columns: 1fr 1fr;
-  background-color: var(--clr-primary2);
 }
 
 .text-container {

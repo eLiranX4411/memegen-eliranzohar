@@ -40,4 +40,20 @@ function showGalleryScreen() {
   elGallery.classList.add(`dsp-grid`)
 }
 
+// -------------------------Hamburger Menu-----------------------------
+
+document.addEventListener('DOMContentLoaded', () => {
+  const elHamburgerMenu = document.querySelector('.hamburger-menu')
+  const elLinksContainer = document.querySelector('.links-container')
+  const elOverlay = document.querySelector('.overlay')
+
+  function toggleMenu() {
+    elLinksContainer.classList.toggle('active')
+    elOverlay.classList.toggle('active')
+  }
+
+  elHamburgerMenu.addEventListener('click', toggleMenu)
+  elOverlay.addEventListener('click', toggleMenu)
+})
+
 // -------------------------TRASHCAN-----------------------------
