@@ -75,9 +75,9 @@
             <label for="canvasText"><input type="text" placeholder="Input meme text here" id="canvasText" oninput="onChangeLineTxt(this.value)" /></label>
             <label for="colorPicker"><input type="color" id="colorPicker" oninput="onChangeColorTxt(this.value)" /></label>
             <div class="crudl">
-              <button class="add-line" onclick="onAddTxt()">+</button>
-              <button class="switch-lines" onclick="switchLines()">^</button>
-              <button class="remove-element">X</button>
+              <button class="add-line" onclick="onAddLine()">+</button>
+              <button class="switch-lines" onclick="onSwitchLine()">^</button>
+              <button class="remove-line" onclick="onRemoveLine()">X</button>
             </div>
             <div class="fonts-crudl">
               <button class="increase-font-size" onclick="onIncreaseFontSize()">A+-</button>
@@ -105,11 +105,11 @@
     </section>
 
     <footer class="main-footer full">&copy; Memegen For Kids - By Eliran Zohar</footer>
-    <script src="JS/services/utilService.js"></script>
-    <script src="JS/services/storageService.js"></script>
-    <script src="JS/services/memeService.js"></script>
+    <script src="js/services/utilService.js"></script>
+    <script src="js/services/storageService.js"></script>
+    <script src="js/services/memeService.js"></script>
 
-    <script src="JS/controllers/galleryController.js"></script>
-    <script src="JS/controllers/memeController.js"></script>
+    <script src="js/controllers/galleryController.js"></script>
+    <script src="js/controllers/memeController.js"></script>
   </body>
 </html>

@@ -15,17 +15,22 @@ function renderMeme() {
   img.onload = () => {
     gCtx.drawImage(img, 0, 0, gElCanvas.width, gElCanvas.height)
 
-    meme.lines.forEach((line) => {
+    meme.lines.forEach((line, idx) => {
       gCtx.font = `${line.size}px Arial`
       gCtx.fillStyle = line.color
-      gCtx.textAlign = `center`
+      gCtx.textAlign = 'center'
 
       gCtx.fillText(line.txt, line.x, line.y)
-      gCtx.strokeText(line.txt, line.x, line.y)
-      gCtx.stroke()
 
-      // gCtx.strokeStyle = 'black'
-      // gCtx.strokeRect(line.x, line.y, line.x, line.y)
+      // If the line is the selected one, draw a border around it
+      if (idx === meme.selectedLineIdx) {
+        const textMetrics = gCtx.measureText(line.txt)
+        const textHeight = line.size
+
+        gCtx.strokeStyle = 'black'
+        gCtx.lineWidth = 2
+        gCtx.strokeRect(line.x - textMetrics.width / 2 - 10, line.y - textHeight, textMetrics.width + 20, textHeight + 10)
+      }
     })
   }
 }
@@ -35,12 +40,19 @@ function onChangeLineTxt(txt) {
   renderMeme()
 }
 
-function onAddTxt() {
+function onAddLine() {
   addLine()
   renderMeme()
 }
 
+function onRemoveLine(idx) {
+  removeLine(idx)
+}
+
 function onSwitchLine() {
+  const elTxtInput = document.querySelector('#canvasText')
+  elTxtInput.value = ''
+
   switchLines()
   renderMeme()
 }

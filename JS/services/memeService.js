@@ -66,7 +66,7 @@ function setImg(imgId) {
 function setLineTxt(txt) {
   gMeme.lines[gMeme.selectedLineIdx].txt = txt
 
-  _memeStorageSaving()
+  // _memeStorageSaving()
 }
 
 function addLine() {
@@ -77,16 +77,35 @@ function addLine() {
     x: 250,
     y: getRandomInt(100, 500),
   })
+
+  _memeStorageSaving()
+}
+
+function removeLine() {
+  let linesLength = gMeme.lines.length
+  gMeme.lines.splice(gMeme.selectedLineIdx, 1)
+
+  if (gMeme.selectedLineIdx >= linesLength) {
+    gMeme.selectedLineIdx = linesLength - 1
+  }
+  if (linesLength === 0) {
+    gMeme.selectedLineIdx = 0
+  }
+
+  renderMeme()
 }
 
 function switchLines() {
-  if (gMeme.selectedLineIdx === 0) {
-    gMeme.selectedLineIdx++
-  } else {
-    gMeme.selectedLineIdx--
-  }
-  // console.log(`gMeme.selectedLineIdx:`, gMeme.selectedLineIdx)
-  // console.log(`gMeme:`, gMeme)
+  // let linesLength = gMeme.lines.length - 1
+  // if (gMeme.selectedLineIdx < linesLength) {
+  //   gMeme.selectedLineIdx++
+  // } else {
+  //   gMeme.selectedLineIdx--
+  // }
+  let linesLength = gMeme.lines.length
+  gMeme.selectedLineIdx = (gMeme.selectedLineIdx + 1) % linesLength
+
+  _memeStorageSaving()
 }
 
 function setLineColor(color) {
